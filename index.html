@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 5 Demo - Node</title>
-    <script src="script.js" async defer></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Java Nook</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-secondary text-primary m-[5vw] lg:max-w-3/4 lg:mx-auto lg:my-[6vw] ">
-    <h1 class="greeting font-bold text-5xl"></h1>
+<body class="bg-[#F7F1E8] text-[#4B3621] font-body">
+
+    <!-- Navigation -->
+    <div class="px-8 py-5 bg-[#6F4E37]">
+        <nav class="flex justify-end">
+            <div class="flex justify-end gap-8 text-lg font-semibold text-[#F7E6CA]">
+                <a href="#home" class="hover:text-[#FFFFC5]">Home</a>
+                <a href="#about" class="hover:text-[#FFFFC5]">About</a>
+                <a href="#menu" class="hover:text-[#FFFFC5]">Menu</a>
+                <a href="#contact" class="hover:text-[#FFFFC5]">Contact</a>
+            </div>
+        </nav>
+    </div>
+    
+    <!--Hero-->
+    <div class="relative h-120 overflow-hidden" id="home">
+        <!--Image-->
+        <img src="Assets/hero.jpg" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-[#21170F]/70"></div>
+        <!--Text-->
+        <div class="absolute inset-0 flex flex-col justify-center px-16">
+            <h1 class="font-display text-8xl font-extrabold text-white drop-shadow-lg">JAVA NOOK</h1>
+            <h3 class="mt-4 text-5xl font-bold italic text-[#FFF3D6] drop-shadow-md">Every sip tells a story</h3>
+        </div>
+    </div>
+
+    <!--About Us-->
+    <div class="px-8 py-20" id="about">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center font-display text-4xl font-bold mb-12">About Us</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="about-img w-full md:w-1/2">
+                    <img src="Assets/about.jpg" class="w-full h-full object-cover">
+                </div>
+
+                <p class="md:flex-1 text-2xl leading-8 text-[#6F4E37]">Since 1960, Java Nook has been serving coffee across three generations, staying true to one simple belief: quality over quantity. We believe every cup of coffee is the beginning of a story. Whether it's a cozy date with someone special, a quiet afternoon spent reading a book, a productive study session, or simply a moment to relax, Java Nook is a place where everyone can feel at home. Our goal is to create more than just great coffee - we want to bring people together, create meaningful moments, and make every visit a little more memorable.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
